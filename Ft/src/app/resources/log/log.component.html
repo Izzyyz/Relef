@@ -1,5 +1,5 @@
 <form [formGroup]="IfcForm" (ngSubmit)="eventSubmit()">
-    <input type="text"placeholder="Email">
-    <input type="password"placeholder="Password">
-    <input type="submit" value="Login">
+    <input type="text"placeholder="Email"formControlName=email>
+    <input type="password"placeholder="Password" formControlName="password">
+    <input type="submit" value="Log in">
 </form>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Ifc } from "../../interfaces/ifc";
-import {ReactiveFormsModule,FormControl,FormGroup,Validators,} from '@angular/forms';
+import { ReactiveFormsModule, FormControl, FormGroup, Validators, } from '@angular/forms';
 
 
 @Component({
@@ -16,7 +16,19 @@ export class LogComponent {
     password: new FormControl('', Validators.required),
   });
 
-  eventSubmit(){
-    console.log(this.IfcForm)
+  eventSubmit() {
+    if (this.IfcForm.valid) {
+      const email = this.IfcForm.value.email;
+      const password = this.IfcForm.value.password;
+
+      if (typeof email === 'string' && typeof password === 'string') {
+        const Ifc: Ifc = {
+          email,
+          password,
+        };
+        console.log("Info", Ifc)
+    } else {
+      console.log("L");
+    }
   }
-}
+}}
