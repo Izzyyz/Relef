@@ -250,10 +250,7 @@ form .login-button{
         display: flex;
         justify-content: space-between;
     }
-    header .logo{
-        height:2.5em;
-        margin-right:1.5em;
-    }
+    
     header .list-nav{
         display: flex;
         list-style: none;
@@ -280,7 +277,7 @@ form .login-button{
         flex-direction: column;
         margin-left:auto;
         width:auto;
-        padding:2;
+        padding:0%;
     }
     
     .text-page {
