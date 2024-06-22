@@ -2,12 +2,16 @@ import { Component, inject } from '@angular/core';
 import { Ifc } from "../../interfaces/ifc";
 import { ReactiveFormsModule, FormControl, FormGroup, Validators, } from '@angular/forms';
 import { LogService } from "../../services/log.service";
+import { JwtHelperService } from "@auth0/angular-jwt";
+import { NavComponent } from "../nav/nav.component";
+import { RouterLink } from "@angular/router";
 
+const jwtHelperService= new JwtHelperService();
 
 @Component({
   selector: 'app-log',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,NavComponent,RouterLink],
   templateUrl: './log.component.html',
   styleUrl: './log.component.css'
 })

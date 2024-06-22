@@ -3,11 +3,12 @@ import { RouterLink } from "@angular/router";
 import { Ifsr } from "../../interfaces/ifsr";
 import { ReactiveFormsModule, FormControl, FormGroup, Validators, } from '@angular/forms';
 import { ResService } from "../../services/res.service";
+import { NavRComponent } from "../nav-r/nav-r.component";
 
 @Component({
   selector: 'app-res',
   standalone: true,
-  imports: [RouterLink, ReactiveFormsModule],
+  imports: [RouterLink, ReactiveFormsModule,NavRComponent],
   templateUrl: './res.component.html',
   styleUrl: './res.component.css'
 })

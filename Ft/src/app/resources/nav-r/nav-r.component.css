@@ -1,15 +1,16 @@
 .navbar {
-    background-color: #fafafa;
+    background-color: #f5f5f5dc;
     height: 80px;
+    border-radius: 16px;
 } 
 
 .navbar.navbar-expand-lg.sticky-top{
-    background-color: #ffffff !important;
+    background-color: #020202 !important;
     opacity: 100% !important;
 }
 s
 .navbar .navbar-brand {
-    color: #5a316e;
+    color: #ff91c2;
     padding-top: 10px;
     font-size: 24px;
     transition: 0.5s color;
@@ -27,7 +28,7 @@ s
 }
 
 .nav-link {
-    color: #000000;
+    color: #fcfafa;
     font-weight: 400 ; 
     position: relative;
 }
@@ -39,7 +40,7 @@ s
 
 .nav-link:hover,
 .nav-link.active {
-    color: #ff7ed8;
+    color: #ff91c2;
 }
 
 
@@ -52,7 +53,7 @@ s
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #fa6fe3e5;
+        background-color: #ff91c2;
         visibility: hidden;
         transition: 0.2s ease-in-out;
     }
@@ -69,7 +70,7 @@ s
 }
 
 .login-button {
-    background-color: #fa8af4;
+    background-color: #ff91c2;
     color: #fdfdfd;
     font-size: 14px;
     padding: 8px 20px;
@@ -79,7 +80,7 @@ s
 }
 
 .login-button:hover {
-    background-color: #fd52e6;
+    background-color: #ff6fb0;
 }
 
 a:not([Mhm]):not([login-button]) {

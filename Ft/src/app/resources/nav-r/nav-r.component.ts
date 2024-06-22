@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'app-nf404',
+  selector: 'app-nav-r',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './nf404.component.html',
-  styleUrl: './nf404.component.css'
+  templateUrl: './nav-r.component.html',
+  styleUrl: './nav-r.component.css'
 })
-export class Nf404Component {
+export class NavRComponent {
 
 }

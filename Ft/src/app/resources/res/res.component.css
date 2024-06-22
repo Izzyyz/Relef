@@ -6,12 +6,10 @@
     box-sizing: border-box;
 }
 
-body{
-    position: relative;
-    background-color:#fdcae1;
+
+.body{
+    
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
     /*background-image: url(../images/wave.svg);*/
@@ -23,12 +21,14 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color:#fdcae1;
-    width: 45%;
+    background-color:#ffd7e9;
+    /*width: 45%;*/
     height: 37em;
+    min-width: 45em;
+    max-width: 60em;
     padding: 30px 50px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px 5px rgba(0,0,0,.5);
+    box-shadow: 5px 10px 35px 5px rgba(252, 137, 208, 0.61);
 }
 .col1 {
     width: 50%;
@@ -63,8 +63,9 @@ header {
 }
 header .logo{
     height:50px;
-    width: 80px;
-    margin-left: 25px;
+    width: 85px;
+    margin-left: 20px;
+    margin-top: 50px;
 }
 header .list-nav{
     display: flex;
@@ -90,33 +91,47 @@ header .list-nav .list-nav-item a:hover{
 .login-content{
     margin-left: 2em;
     width:25em ;
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+    padding-top: 120px;
 }
 
 .text-page {
     margin-top: 0.5cm;
+    padding-top: 30px;
 }
 .text-page p {
     color: #000000;
-    font-weight: 600;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 60px;
+    font-size: 14px;
 }
 
 .text-page p:nth-child(3){
-    font-weight: normal;
-    font-size: .8em;
+    font-size: 16px;
 }
 
 .text-page p a{
     text-decoration: none;
-    color: #ff87bd;
-    font-weight: normal;
+    color: #ff91c2; 
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
 }
 
 .text-page h1{
     color: #000000;
-    margin: .3em auto;
+    margin-bottom: 10px;
+    padding-right: 50px;
 }
 .text-page h1 span{
-    color: #ff87bd;
+    color: #ff91c2;
+}
+
+.p{
+    font-size: 14px!important;
 }
 
 
@@ -134,15 +149,24 @@ form input{
     font-size: .7em;
     border-radius: 10px;
     border: 1.5px solid transparent;
-    margin: 15px 20px auto 0;
+    margin: 25px 20px auto 0;
     z-index: 100;
 }
+
+#first-name-input{
+    margin-right: 25px;
+}
+
+#cpass{
+    margin-right: 25px;
+}
+
 input:focus{
     border: orange 1.5px solid;
 }
 
 form input::placeholder{
-    color:#808fad;
+    color:#5e5e5e;
 }
 
 form #email-input, #pass{
@@ -151,11 +175,15 @@ form #email-input, #pass{
 
 form .login-button{
     border-radius: 360px;
-    background-color: #ff87bd;
-    font-weight: 600;
+    background-color: #ff91c2;
+    font-weight: 400;
     cursor: pointer;
+    transition: background-color 0.5s;
 }
 
+.login-buttona:hover{
+    background-color: #0c0307;
+}
 .main-content .copyright {
     position: absolute;
     text-decoration: none;
@@ -169,6 +197,9 @@ form .login-button{
 .main-content .copyright:hover{
     color:#f800f8;
 }
+.h1{
+    font-size: calc(1.4rem + 1.6vw)
+    }
 
 @media screen and (max-width:1280px){
     .col2{
@@ -185,7 +216,7 @@ form .login-button{
     body{
         width:100vw;
         height: 100vh;
-        background-color:#282a37;
+        background-color:#000000;
         background-image: none;
 
     }
@@ -328,4 +359,7 @@ form .login-button{
     .main-content .copyright:hover{
         color:#a9b2c3;
     }
+}
+.h1{
+font-size: calc(1.4rem + 1.6vw)
 }
