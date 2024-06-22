@@ -1,1 +1,5 @@
-<p>log works!</p>
+<form [formGroup]="IfcForm" (ngSubmit)="eventSubmit()">
+    <input type="text"placeholder="Email">
+    <input type="password"placeholder="Password">
+    <input type="submit" value="Login">
+</form>
