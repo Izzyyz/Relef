@@ -1,7 +1,7 @@
 <app-nav-r></app-nav-r>
 <main class="main-content">
         <header>
-            <a routerLink="/home"><!--<img class="logo" src="../../../assets/Screenshot_146-removebg-preview.png" alt="logo">--></a>
+            <!--<a routerLink="/home"><img class="logo" src="../../../assets/Screenshot_146-removebg-preview.png" alt="logo"></a>*/-->
             <nav class="header-nav">
         <div class="login-content">
             <div class="text-page">
@@ -9,7 +9,7 @@
                 <p>Already A Member?<a routerLink="/log"> <br>Log in<br></a></p>
             </div>
     
-            <form [formGroup]="IfsrForm" (ngSubmit)="eventSubmit()">
+            <form>
                 <input type="text" name="" id="first-name-input" placeholder="First name"formControlName=fName>
                 <input type="text" name="" id="last-name-input" placeholder="Last name"formControlName=lName>
                 <input type="email" name="" id="email-input" placeholder="Email"formControlName=email>

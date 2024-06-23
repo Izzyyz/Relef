@@ -7,6 +7,7 @@ import { AscComponent } from "../app/resources/asc/asc.component";
 import { LogComponent } from "../app/resources/log/log.component";
 import { ResComponent } from "../app/resources/res/res.component";
 import { Nf404Component } from "../app/resources/nf404/nf404.component";
+import { TestsComponent } from "../app/resources/tests/tests.component";
 
 export const routes: Routes = [
     {path:"nav",title:"Nav",component:NavComponent},
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path:"asc",title:"Routines",component:AscComponent},
     {path:"log",title:"Login",component:LogComponent},
     {path:"res",title:"Register",component:ResComponent},
+    {path:"test",title:"Test",component:TestsComponent},
     {path: "", redirectTo: "home", pathMatch: "full" },
     {path: "**",title: "404 | Page Not Found",component:Nf404Component},
 ];

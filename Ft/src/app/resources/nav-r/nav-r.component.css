@@ -1,11 +1,10 @@
 .navbar {
-    background-color: #f5f5f5dc;
+    background-color: #000000dc;
     height: 80px;
     width: 100%;
-    border-radius: 16px;
-} 
+}
 
-.navbar.navbar-expand-lg.sticky-top{
+.navbar.navbar-expand-lg.sticky-top {
     background-color: #020202 !important;
     opacity: 100% !important;
     width: 100%;
@@ -27,12 +26,15 @@
     box-shadow: none !important;
     outline: none !important;
     border: none !important;
+    color: white;
 }
 
 .nav-link {
     color: #fcfafa;
-    font-weight: 400 ; 
+    font-weight: 400;
     position: relative;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
 .a:hover {
@@ -47,6 +49,10 @@
 
 .container-fluid {
     width: 100% auto;
+}
+
+.offcanvas-body {
+    background-color: #000000;
 }
 @media(min-width:991px) {
     .nav-link::before {
@@ -66,11 +72,24 @@
         width: 100%;
         visibility: visible;
     }
+
 }
 
-.offcanvas-title {
-    color: #ece2e2;
 
+
+.offcanvas-title {
+    color: #fffafa;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.offcanvas-header{
+    background-color: #000000;
+    padding-bottom: 0%;
+    
 }
 
 .login-button {
@@ -78,7 +97,7 @@
     color: #fdfdfd;
     font-size: 14px;
     padding: 8px 20px;
-    border-radius: 10px;
+    border-radius: 360px;
     text-decoration: none;
     transition: 0.2s background-color;
 }
@@ -92,6 +111,10 @@ a:not([Mhm]):not([login-button]) {
         color: inherit;
         text-decoration: none;
     }
+}
+
+.btn-close{
+    color: white!important;
 }
 
 .container-fluid {

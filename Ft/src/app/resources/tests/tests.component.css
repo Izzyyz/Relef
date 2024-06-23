@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 
-
 body{
-    
     position: relative;
     background-color:#464856;
     font-family: 'Poppins', sans-serif;
@@ -23,67 +21,30 @@ body{
     position: absolute;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color:#ffd7e9;
-    width: 65%;
-    height: 30em;
-    
-    /*min-width: 45em;s
-    max-width: 60em;*/
+    background-color:#282a37;
+    width: 70%;
+    height: 25em;
     padding: 30px 50px;
     border-radius: 15px;
-    box-shadow: 5px 10px 35px 5px rgba(252, 137, 208, 0.61);
-}
-
-
-@media screen and (min-width:1475px){
-    .main-content{
-        width: 50%!important;
-    }
-}
-
-@media screen and (max-width:1150px){
-    .main-content{
-        width:100vw;
-        height: 100vh;
-        background-color: #000000;
-        }
-    body{
-        background-color:#000000;
-        background-image: none;
-    }
-    .text-page h1{
-        color: #ffffff!important;
-    }
-    .text-page p {
-        color: #ffffff!important;
-    }
-    form{
-        margin-right: 50px!important;
-    } 
-    .a.copyright{
-        color: #ff91c2;
-    }  
+    box-shadow: 0 10px 25px 5px rgba(0,0,0,.5);
 }
 .col1 {
     width: 50%;
 }
 
-/*.col2{
+.col2{
     width: 50%;
     height: 95%;
-   background-image: url(../images/undraw_astronaut_re_8c33.svg);
+    /*background-image: url(../images/undraw_astronaut_re_8c33.svg);*/
     background-size: 25em;
     background-repeat: no-repeat;
     background-position: bottom right;
     animation: floating infinite 5s;
     z-index: -1;
-}*/
+}
 
 @keyframes floating {
     0%{
@@ -101,10 +62,8 @@ header {
     display: flex;
 }
 header .logo{
-    height:50px;
-    width: 85px;
-    margin-left: 20px;
-    margin-top: 50px;
+    height:2.5em;
+    margin-right: 5em;
 }
 header .list-nav{
     display: flex;
@@ -116,13 +75,13 @@ header .list-nav .list-nav-item{
 }
 
 header .list-nav .list-nav-item a{
-    color: #ffffff;
+    color: #808fad;
     font-weight: 600;
     text-decoration: none;
     transition: .5s;
 }
 header .list-nav .list-nav-item a:hover{
-    color:#fff7f7;
+    color:#dee9ff;
     transition: .5s;
 }
 
@@ -132,84 +91,60 @@ header .list-nav .list-nav-item a:hover{
     width:25em ;
     display: flex;
     justify-content: center;
-    padding-right: 40px;
-    padding-top: 120px;
-    
 }
 
 .text-page {
-    margin-top: 0.5cm;
-    padding-top: 30px;
-    margin-left: 40px;
+    margin-top: 4.5em;
 }
 .text-page p {
-    color: #000000;
-    font-weight: 400;
-    text-align: center;
-    padding-right: 60px;
-    font-size: 14px;
+    color: #a8afbf;
+    font-weight: 600;
 }
 
 .text-page p:nth-child(3){
-    font-size: 16px;
+    font-weight: normal;
+    font-size: .8em;
 }
 
 .text-page p a{
     text-decoration: none;
-    color: #ff91c2; 
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
+    color: orange;
+    font-weight: normal;
 }
 
 .text-page h1{
-    color: #000000;
-    margin-bottom: 10px;
-    padding-right: 50px;
+    
+    color: #fff;
+    margin: .3em auto;
 }
 .text-page h1 span{
-    color: #ff91c2;
-}
-
-.p{
-    font-size: 14px!important;
+    color: orange;
 }
 
 
 
 form {
     margin: 1.5em 0;
-    margin-right: 50px;
-    padding-bottom: 100px;
 }
 
 form input{
-    background-color:#ffffff ;
-    color: #000000;
+    background-color:#323645 ;
+    color: #fff;
     width: 170px;
     outline: none;
     padding: 12px 20px;
     font-size: .7em;
     border-radius: 10px;
     border: 1.5px solid transparent;
-    margin: 25px 20px auto 0;
+    margin: 15px 20px auto 0;
     z-index: 100;
 }
-
-#first-name-input{
-    margin-right: 25px;
-}
-
-#cpass{
-    margin-right: 25px;
-}
-
 input:focus{
     border: orange 1.5px solid;
 }
 
 form input::placeholder{
-    color:#5e5e5e;
+    color:#808fad;
 }
 
 form #email-input, #pass{
@@ -218,31 +153,24 @@ form #email-input, #pass{
 
 form .login-button{
     border-radius: 360px;
-    background-color: #ff91c2;
-    font-weight: 400;
+    background-color: orange;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.5s;
 }
 
-.login-buttona:hover{
-    background-color: #0c0307;
-}
 .main-content .copyright {
     position: absolute;
     text-decoration: none;
     right: 2em;
     bottom: 1em;
-    color: #000000;
+    color: #808fad;
     font-weight: 600;
     font-size: .7em;
 }
 
 .main-content .copyright:hover{
-    color:#f800f8;
+    color:#a9b2c3;
 }
-.h1{
-    font-size: calc(1.4rem + 1.6vw)
-    }
 
 @media screen and (max-width:1280px){
     .col2{
@@ -259,15 +187,13 @@ form .login-button{
     body{
         width:100vw;
         height: 100vh;
-        background-color:#000000;
+        background-color:#282a37;
         background-image: none;
 
     }
     .main-content {
         position: static;
         background-color: transparent;
-        display: flex;
-        justify-content: center;
         top: auto;
         left: auto;
         transform: none;
@@ -278,12 +204,9 @@ form .login-button{
         width: auto;
         height: auto;
         padding:3em;
-        padding-top: 0%;
-        padding-bottom: 0%;
         border-radius: 0;
         box-shadow: none;
         text-align: center;
-        align-items: center;
     }
     
     .col1{
@@ -298,7 +221,10 @@ form .login-button{
         display: flex;
         justify-content: space-between;
     }
-    
+    header .logo{
+        height:2.5em;
+        margin-right:1.5em;
+    }
     header .list-nav{
         display: flex;
         list-style: none;
@@ -322,24 +248,17 @@ form .login-button{
     
     .login-content{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
+        flex-direction: column;
         margin-left:auto;
         width:auto;
-        padding:0%;
+        padding:2;
     }
     
     .text-page {
         margin-top: 4.5em;
-        margin-top: 0%;
-        margin-left: 0%;
     }
     .text-page p {
-        color: #fefeff;
-        padding-right: 0px;
+        color: #a8afbf;
         font-weight: 600;
     }
     
@@ -350,31 +269,28 @@ form .login-button{
     
     .text-page p a{
         text-decoration: none;
-        color: #ff91c2;
+        color: orange;
         font-weight: normal;
     }
     
     .text-page h1{
         color: #fff;
-        padding-right: 0px;
         margin: .3em auto;
     }
     .text-page h1 span{
-        color: #ff91c2;
+        color: orange;
     }
     
     
     
     form {
-        margin: 0%;
+        margin: auto;
         width: 80%;
-        margin-right: 0px !important;
-        padding-bottom: 0%;
     }
     
     form input{
-        background-color:#2b2b2b ;
-        color: #000000;
+        background-color:#323645 ;
+        color: #fff;
         width: 100%;
         outline: none;
         padding: 12px 20px;
@@ -388,7 +304,7 @@ form .login-button{
     }
     
     form input::placeholder{
-        color:#ffffff;
+        color:#808fad;
     }
     
     form #email-input, #pass{
@@ -397,7 +313,7 @@ form .login-button{
     
     form .login-button{
         border-radius: 360px;
-        background-color: ff91c2;
+        background-color: rgb(255, 166, 0);
         font-weight: 600;
         cursor: pointer;
         margin-bottom: 4em;
@@ -406,15 +322,12 @@ form .login-button{
     .main-content .copyright {
         position: static;
         text-decoration: none;
-        color: #ffffff;
+        color: #808fad;
         font-weight: 600;
         font-size: .7em;
     }
     
     .main-content .copyright:hover{
-        color:#f800f8;
+        color:#a9b2c3;
     }
-}
-.h1{
-font-size: calc(1.4rem + 1.6vw)
 }
