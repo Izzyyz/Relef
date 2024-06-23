@@ -40,7 +40,7 @@ export class ResComponent {
           cPassword,
         };
         this.resservice.res(Ifsr).subscribe((response:any)=>{console.log(response)})
-        console.log("Info", Ifsr)
+        //console.log("Info", Ifsr)
     } else {
       console.log("L");
     }

@@ -211,7 +211,7 @@ form .login-button{
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     body{
         width:100vw;
         height: 100vh;
@@ -222,6 +222,7 @@ form .login-button{
     .main-content {
         position: static;
         background-color: transparent;
+        display: flex;
         top: auto;
         left: auto;
         transform: none;
@@ -231,6 +232,7 @@ form .login-button{
         background-position:top;
         width: auto;
         height: auto;
+        margin-top: 150px;
         padding:3em;
         border-radius: 0;
         box-shadow: none;
@@ -283,11 +285,22 @@ form .login-button{
     }
     
     .text-page {
-        margin-top: 4.5em;
+        display: flex;
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+        align-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
     }
     .text-page p {
-        color: #a8afbf;
-        font-weight: 600;
+        color: #ffffff;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
     }
     
     .text-page p:nth-child(3){
@@ -302,8 +315,10 @@ form .login-button{
     }
     
     .text-page h1{
+        margin-bottom: 30px;
         color: #fff;
-        margin: .3em auto;
+        margin: 0%;
+       
     }
     .text-page h1 span{
         color: orange;

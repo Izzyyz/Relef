@@ -51,9 +51,8 @@
     width: 100% auto;
 }
 
-.offcanvas-body {
-    background-color: #000000;
-}
+
+
 @media(min-width:991px) {
     .nav-link::before {
         content: "";
@@ -72,10 +71,11 @@
         width: 100%;
         visibility: visible;
     }
-
 }
 
-
+.offcanvas-body {
+    background-color: #000000;
+}
 
 .offcanvas-title {
     color: #fffafa;
@@ -86,10 +86,9 @@
 
 }
 
-.offcanvas-header{
-    background-color: #000000;
-    padding-bottom: 0%;
-    
+
+.offcanvas-header {
+    background-color: #ffa1cc !important;
 }
 
 .login-button {
@@ -111,10 +110,6 @@ a:not([Mhm]):not([login-button]) {
         color: inherit;
         text-decoration: none;
     }
-}
-
-.btn-close{
-    color: white!important;
 }
 
 .container-fluid {
