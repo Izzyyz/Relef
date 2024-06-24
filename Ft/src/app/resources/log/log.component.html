@@ -1,7 +1,16 @@
-<app-nav></app-nav>
-<div class="div-content">
+<app-nav-r></app-nav-r>
+<main class="main-content">
+    <header>
+        <a routerLink="/home"><!--<img class="logo" src="../../../assets/Screenshot_146-removebg-preview.png" alt="logo">--></a>
+        <nav class="header-nav">
+    <div class="login-content">
+        <div class="text-page">
+            <h1>Sign In<span>.</span></h1>
+            <p>Do not have an account?<a routerLink="/log">Sign up</a></p>
+        </div>
 <form [formGroup]="IfcForm" (ngSubmit)="eventSubmit()">
-    <input type="text"placeholder="Email"formControlName=email>
-    <input type="password"placeholder="Password" formControlName="password">
-    <input type="submit" value="Log in">
+    <input type="text"id="email-input"placeholder="Email"formControlName=email>
+    <input type="password"id="pass"placeholder="Password" formControlName="password">
+    <input type="submit"class="login-button" value="Log in">
 </form>
+<a class="copyright" href="https://github.com/Izzyyz" target="_blank" rel="noopener noreferrer">Izzy &copy; 2024.</a>

@@ -5,13 +5,14 @@ import { LogService } from "../../services/log.service";
 import { JwtHelperService } from "@auth0/angular-jwt";
 import { NavComponent } from "../nav/nav.component";
 import { RouterLink } from "@angular/router";
+import { NavRComponent } from "../nav-r/nav-r.component";
 
 const jwtHelperService= new JwtHelperService();
 
 @Component({
   selector: 'app-log',
   standalone: true,
-  imports: [ReactiveFormsModule,NavComponent,RouterLink],
+  imports: [ReactiveFormsModule,NavComponent,RouterLink,NavRComponent],
   templateUrl: './log.component.html',
   styleUrl: './log.component.css'
 })
