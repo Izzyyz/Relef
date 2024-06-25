@@ -45,6 +45,19 @@ body{
     .main-content{
         width: 45%!important;
     }
+    .main-content .copyright {
+        position: absolute;
+        text-decoration: none;
+        right: 2em;
+        bottom: 1em;
+        color: #000000!important;
+        font-weight: 600;
+        font-size: .7em;
+    }
+    
+    .main-content .copyright:hover{
+        color:#f800f8; 
+}
 }
 
 @media screen and (max-width:1150px){
@@ -68,12 +81,24 @@ body{
     } 
     .a.copyright{
         color: #ff91c2;
-    }  
+    } 
+    .main-content .copyright {
+        position: absolute;
+        text-decoration: none;
+        right: 2em;
+        bottom: 1em;
+        color: #000000;
+        font-weight: 600;
+        font-size: .7em;
+    }
+    
+    .main-content .copyright:hover{
+        color:#f800f8; 
 }
 .col1 {
     width: 50%;
 }
-
+}
 /*.col2{
     width: 50%;
     height: 95%;
@@ -251,8 +276,20 @@ form .login-button{
     .col2{
         background-image:none;
     }
+    .main-content .copyright {
+        position: absolute;
+        text-decoration: none;
+        right: 2em;
+        bottom: 1em;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: .7em;
+    }
+    
+    .main-content .copyright:hover{
+        color:#f800f8;
 }
-
+}
 
 
 
@@ -349,6 +386,7 @@ form .login-button{
     .text-page p:nth-child(3){
         font-weight: normal;
         font-size: .8em;
+        text-align: right
     }
     
     .text-page p a{
@@ -376,7 +414,7 @@ form .login-button{
     }
     
     form input{
-        background-color:#2b2b2b ;
+        background-color:#fff9f9 ;
         color: #000000;
         width: 100%;
         outline: none;
@@ -391,7 +429,7 @@ form .login-button{
     }
     
     form input::placeholder{
-        color:#ffffff;
+        color:#000000;
     }
     
     form #email-input, #pass{
@@ -417,6 +455,20 @@ form .login-button{
     .main-content .copyright:hover{
         color:#f800f8;
     }
+
+    .main-content .copyright {
+        position: absolute;
+        text-decoration: none;
+        right: 2em;
+        bottom: 1em;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: .7em;
+    }
+    
+    .main-content .copyright:hover{
+        color:#f800f8;
+}
 }
 .h1{
 font-size: calc(1.4rem + 1.6vw)

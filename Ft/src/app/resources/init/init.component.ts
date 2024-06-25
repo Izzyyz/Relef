@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { NavComponent } from "../nav/nav.component";
 import { RouterLink } from "@angular/router";
 import { NavRComponent } from "../nav-r/nav-r.component"
+import { PromComponent } from "../prom/prom.component";
 
 @Component({
   selector: 'app-init',
   standalone: true,
-  imports: [NavComponent, RouterLink,NavRComponent],
+  imports: [NavComponent, RouterLink,NavRComponent,PromComponent],
   templateUrl: './init.component.html',
   styleUrl: './init.component.css'
 })
