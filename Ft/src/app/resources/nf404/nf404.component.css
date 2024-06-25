@@ -118,7 +118,7 @@ header .list-nav .list-nav-item a:hover{
 
 .Homebtt{
     background-color: #ff91c2;
-    color: #fdfdfd;
+    color: #0a0202;
     font-size: 14px;
     margin-left: 5px;
     padding: 8px 20px;
@@ -310,18 +310,18 @@ form .login-button{
     
     .text-page p a{
         text-decoration: none;
-        color: orange;
+        color: #ffffff;
         font-weight: normal;
     }
     
     .text-page h1{
         margin-bottom: 30px;
         color: #fff;
-        margin: 0%;
+        
        
     }
     .text-page h1 span{
-        color: orange;
+        color: #ff91c2;
     }
     
     

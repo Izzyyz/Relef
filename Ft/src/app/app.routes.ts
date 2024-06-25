@@ -17,7 +17,7 @@ export const routes: Routes = [
     {path:"about",title:"About Us",component:AboutComponent},
     {path:"routines",title:"Routines",component:AscComponent},
     {path:"login",title:"Login",component:LogComponent},
-    {path:"sign Up",title:"Sign Up",component:ResComponent},
+    {path:"sign up",title:"Sign Up",component:ResComponent},
     {path:"test",title:"Test",component:TestsComponent},
     {path:"prom",title:"Prom",component:PromComponent},
     {path: "", redirectTo: "home", pathMatch: "full" },
