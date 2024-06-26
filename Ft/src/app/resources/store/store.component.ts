@@ -3,11 +3,12 @@ import { NavComponent } from "../nav/nav.component";
 import { RouterLink } from "@angular/router";
 import { StoreService } from "../../services/store.service";
 import { NavRComponent } from "../nav-r/nav-r.component";
-
+import { PromComponent } from "../prom/prom.component";
+import { FooterComponent } from "../footer/footer.component";
 @Component({
   selector: 'app-store',
   standalone: true,
-  imports: [NavComponent, RouterLink, NavRComponent],
+  imports: [NavComponent, RouterLink, NavRComponent, PromComponent, FooterComponent],
   templateUrl: './store.component.html',
   styleUrl: './store.component.css'
 })

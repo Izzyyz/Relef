@@ -1,0 +1,26 @@
+.yatusabe{
+    /* background-color:#ffd7e9; */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 6px 25px 5px rgba(252, 137, 208, 0.61);
+    }
+    .yatusabe2{
+        border-radius: 15px;
+    }
+    
+    .ñaum{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .proximamente{
+        position: absolute;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .proximamente2{
+        position: absolute;
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
