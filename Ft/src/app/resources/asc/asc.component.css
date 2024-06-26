@@ -1,0 +1,24 @@
+.routines{
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.title{
+    text-shadow: 0 0 30px #fa4b9a;
+    text-align: center;
+    color: #ff91c2;
+    margin: 0%;
+}
+
+h2{
+    
+    text-shadow: 0 0 30px #fa4b9a;
+    text-align: center;
+    color: #ff91c2;
+    margin: 0%;
+}
