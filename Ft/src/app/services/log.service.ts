@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
 import { Ifc } from "../interfaces/ifc";
-/* import { ToastrService } from "ngx-toastr"; */
+import { ToastrService } from "ngx-toastr"; 
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class LogService {
   constructor() { }
   httpClient = inject(HttpClient);
   router = inject(Router);
-/* toastrService = inject(ToastrService); */
+toastrService = inject(ToastrService);
   
   API_URL = "http://localhost:2444/log-in";
 redirectUrl: string | null = null;
@@ -32,7 +32,7 @@ return this.httpClient.get(`${this.API_URL}/${token}`);
   }
 }
   logout() {
-    /* this.toastrService.info("Thank you for using our services, see you later.!"); */
+    this.toastrService.info("Thank you for using our services, see you later.!");
   localStorage.removeItem("token");
   this.router.navigate(["/"]);
 }

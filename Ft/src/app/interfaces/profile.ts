@@ -6,5 +6,8 @@ export interface Profile {
     password:String;
     cPassword:String;
     address:String;
-
+    country:String;
+    city:String;
+    phoneNum:String;
+    
 }

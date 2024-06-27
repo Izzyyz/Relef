@@ -2,6 +2,7 @@ import { Injectable, inject, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { LogService } from "../services/log.service";
 import { Profile } from "../interfaces/profile";
+import { ProfileD } from "../interfaces/profile-d";
 @Injectable({
   providedIn: 'root'
 })
@@ -44,8 +45,8 @@ getProfile(){
 updProfile(crud: Profile){
   return this.httpClient.put(`${this.API_URL_Profile}/${crud._id}`, crud )
 }
-upd(id: string, crud: Profile) {
-  return this.httpClient.put(`${this.API_URL_Profile}/${id}`, crud);
+delProfile(crudD: ProfileD){
+  return this.httpClient.delete(`${this.API_URL_Profile}/${crudD._id}`)
 }
 }
 
