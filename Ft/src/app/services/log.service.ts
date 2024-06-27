@@ -1,16 +1,43 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Router } from "@angular/router";
 import { Ifc } from "../interfaces/ifc";
+/* import { ToastrService } from "ngx-toastr"; */
 
 @Injectable({
   providedIn: 'root'
 })
 export class LogService {
-
+  
   constructor() { }
   httpClient = inject(HttpClient);
+  router = inject(Router);
+/* toastrService = inject(ToastrService); */
+  
+  API_URL = "http://localhost:2444/log-in";
+redirectUrl: string | null = null;
 
   log(Ifc:Ifc){
-    return this.httpClient.post("http://localhost:2444/log-in", Ifc)
+    return this.httpClient.post(this.API_URL, Ifc)
   }
+  validarToken(token: string) {
+return this.httpClient.get(`${this.API_URL}/${token}`);
+}
+  isLog() {
+  const token = localStorage.getItem("token");
+  if (token) {
+   /*  this.toastrService.success("Loging in"); */
+  } else {
+   /*  this.toastrService.warning("Make sure you're writing well your credentials"); */
+  }
+}
+  logout() {
+    /* this.toastrService.info("Thank you for using our services, see you later.!"); */
+  localStorage.removeItem("token");
+  this.router.navigate(["/"]);
+}
+logout2(){
+  localStorage.removeItem("token");
+  this.router.navigate(["/login"]);
+}
 }

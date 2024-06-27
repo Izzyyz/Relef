@@ -6,6 +6,8 @@ import { JwtHelperService } from "@auth0/angular-jwt";
 import { NavComponent } from "../nav/nav.component";
 import { RouterLink } from "@angular/router";
 import { NavRComponent } from "../nav-r/nav-r.component";
+/* import { ToastrService } from "ngx-toastr"; */
+import { Router } from "@angular/router";
 
 const jwtHelperService= new JwtHelperService();
 
@@ -17,7 +19,10 @@ const jwtHelperService= new JwtHelperService();
   styleUrl: './log.component.css'
 })
 export class LogComponent {
+  router = inject(Router);
+ /*  toastrService = inject(ToastrService); */
   loginService = inject(LogService);
+
   IfcForm = new FormGroup({
     email: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
@@ -33,10 +38,23 @@ export class LogComponent {
           email,
           password,
         };
-        this.loginService.log(Ifc).subscribe((response:any)=>{console.log(response)})
-        console.log("Info", Ifc)
+        this.loginService.log(Ifc).subscribe((respuesta:any)=>{
+          if (respuesta.resultado === "bien"){
+            localStorage.setItem("token", respuesta.datos)
+            const redirectUrl = this.loginService.redirectUrl ? this.loginService.redirectUrl: "/store"
+            this.loginService.redirectUrl = null;
+            this.router.navigateByUrl(redirectUrl)
+          } else {
+            /* this.toastrService.warning("Invalid token") */
+            console.log("invalid token");
+          }
+        });
+         
+      
+        
     } else {
-      console.log("L");
+     /*  this.toastrService.error("You must fill all fields"); */
+     console.log("You must fill all fields");
     }
   }
 }}

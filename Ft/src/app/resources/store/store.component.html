@@ -4,7 +4,7 @@
 <main class="container d-flex flex-wrap justify-content-center gap-5">
     @for ( product of allStore ; track product._id ) {
     <div class="card gap-0 row-gap-3 text-center column-gap-3 p-3 mb-5 yatusabe" style="width: 18rem; height: 40rem;">
-        <img src="http://localhost:2444/img/%7B%7Bproduct.img%7D%7D" class="card-img-top yatusabe2"
+        <img src="http://localhost:2444/img/{{product.img}}" class="card-img-top yatusabe2"
             alt="foto de {{product.img}}" style="height: 20rem;">
         <div class="card-body">
             <h4 class="card-title">{{product.product}}</h4>

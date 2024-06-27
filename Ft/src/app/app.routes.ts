@@ -9,6 +9,7 @@ import { ResComponent } from "../app/resources/res/res.component";
 import { Nf404Component } from "../app/resources/nf404/nf404.component";
 import { TestsComponent } from "../app/resources/tests/tests.component";
 import { PromComponent } from "../app/resources/prom/prom.component";
+import { ProfileComponent } from "../app/resources/profile/profile.component"; 
 
 export const routes: Routes = [
     {path:"nav",title:"Nav",component:NavComponent},
@@ -20,6 +21,7 @@ export const routes: Routes = [
     {path:"sign up",title:"Sign Up",component:ResComponent},
     {path:"test",title:"Test",component:TestsComponent},
     {path:"prom",title:"Prom",component:PromComponent},
+    {path:"profile",title:"Profile",component:ProfileComponent},
     {path: "", redirectTo: "home", pathMatch: "full" },
     {path: "**",title: "404 | Page Not Found",component:Nf404Component},
 ];

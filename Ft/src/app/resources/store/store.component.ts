@@ -18,7 +18,7 @@ export class StoreComponent {
   getAllStore(){
     this.storeService.getData().subscribe((res: any)=>{
       if (res) {
-        this.allStore = res;
+        this.allStore = res.datos;
       } else {
         console.log("There was an error fetching the api");
       }

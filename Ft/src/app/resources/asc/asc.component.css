@@ -22,3 +22,10 @@ h2{
     color: #ff91c2;
     margin: 0%;
 }
+
+@media screen and (max-width:785px){
+    .p-1{
+        background-color: none!important;
+        box-shadow: none!important;
+    }
+}
