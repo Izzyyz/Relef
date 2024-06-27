@@ -53,8 +53,10 @@ export class ResComponent {
             this.logService.redirectUrl = null;
             this.router.navigateByUrl(redirectUrl)
             }, 2000);
-          } else {
-            this.toastrService.warning("There's already an account with this email")
+          } else if (respuesta.resultado === "mal2") {
+            this.toastrService.warning("The password and confirm password must be the same")
+          } else{
+            this.toastrService.warning("There's already an account created with this email")
           }
         })
         
