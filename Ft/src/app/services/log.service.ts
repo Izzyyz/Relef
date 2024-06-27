@@ -26,9 +26,9 @@ return this.httpClient.get(`${this.API_URL}/${token}`);
   isLog() {
   const token = localStorage.getItem("token");
   if (token) {
-   /*  this.toastrService.success("Loging in"); */
+    return true;
   } else {
-   /*  this.toastrService.warning("Make sure you're writing well your credentials"); */
+    return false;
   }
 }
   logout() {

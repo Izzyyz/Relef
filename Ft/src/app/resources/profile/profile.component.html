@@ -1,6 +1,28 @@
 <app-nav-r></app-nav-r>
-<app-prom></app-prom>
-<h4 class="card-title">First name: {{fName}}</h4>
+<div class="space"></div>
+<body>
+<main class="main-content">
+      <div class="text">
+        <h3 style="margin-bottom: 20px;">Your Info</h3>
+        <br><h6>Id: <b>{{id}}</b></h6><br>
+        <br><h6>First Name: <b>{{fName}}</b></h6><br>
+        <br><h6>Last Name: <b>{{lName}}</b></h6><br>
+        <br><h6>Email: <b>{{emailS}}</b></h6><br>
+        <br><h6>Address: <b>{{address}}</b></h6><br>
+    </div>
+      <div class="text2">
+        <div class="titlecont"><h3 class="titleupd">Info Update</h3>
+        <form [formGroup]="crudForm" (ngSubmit)="eventSubmit()">
+        <input type="text" name="_id" id="id-input" placeholder="Id" formControlName=_id>
+        <input type="text" name="" id="first-name-input" placeholder="First name"formControlName=fName>
+        <input type="text" name="" id="last-name-input" placeholder="Last name"formControlName=lName>
+        <input type="email" name="" id="email-input" placeholder="Email"formControlName=email>
+        <input type="text" name="" id="email-input" placeholder="Address"formControlName=address>
+        <input type="password" name="" id="pass" placeholder="Password"formControlName=password>
+        <input type="password" name="" id="cpass" placeholder="Confirm Password"formControlName=cPassword>
+        <input type="submit" class="login-button" value="Update">
+
+<!-- <h4 class="card-title">First name: {{fName}}</h4>
 <h4 class="card-title">last name: {{lName}}</h4>
 <h4 class="card-title">Email: {{emailS}}</h4>
 <h4 class="card-title">Address: {{address}}</h4>
@@ -14,5 +36,5 @@
     <input type="password" name="password" id="pass" placeholder="Password" formControlName=password>
     <input type="password" name="cPassword" id="cpass" placeholder="Confirm Password" formControlName=cPassword>
     <input type="text" name="address" id="address" placeholder="address" formControlName=address>
-    <input type="submit" class="login-button" value="Update">
-    <app-footer></app-footer>
+    <input type="submit" class="login-button" value="Update"> -->
+    
