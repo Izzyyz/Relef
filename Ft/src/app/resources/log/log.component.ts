@@ -49,7 +49,7 @@ export class LogComponent {
             }, 2000);
           } else {
             this.toastrService.warning("Invalid token")
-            console.log("invalid token");
+            /*console.log("invalid token");*/
           }
         });
          

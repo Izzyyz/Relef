@@ -8,37 +8,50 @@
             alt="foto de {{product.img}}" style="height: 20rem;">
         <div class="card-body">
             <h4 class="card-title">{{product.product}}</h4>
-            <h5 class="card-text proximamente">${{product.price}}</h5>
-
-
+            <button type="button" class="Btn-info proximamente" data-bs-toggle="modal" data-bs-target="#infoModal"
+                (click)="handleInfo(product)">Info</button>
+            
         </div>
     </div>
-
-
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="infoModalLabel">{{product.product}}</h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        @if (productSelected) {
+        <ul style="list-style: none;">
+          <li><b class="propeties">Description: </b>{{productSelected.description}}</li>
+          <!-- <li><b>Ingredients: </b>{{productSelected.ingredients}}</li> -->
+          <li class="propetiesl"><b class="propeties">Net content: </b>{{productSelected.neto}}{{productSelected.volume}}</li>
+          <li class="propetiesl"><b class="propeties">Available: </b>  {{productSelected.available? ("YES" | lowercase) : ("NO" | lowercase)}}</li>
+          <li class="propetiesl"><b class="propeties">Amount: </b>     {{productSelected.productAmount}}</li>
+          <li class="propetiesl"><b class="propeties">Price: </b>      {{productSelected.price| currency}}</li>
+          <li><img
+            src="http://localhost:2444/img/{{ productSelected.img }}"
+            class="img-thumbnail"
+            alt="Img of {{ productSelected.product }}"/></li>
+        </ul>
+        }
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="Btn-info" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
     }
 </main>
 <app-footer></app-footer>
-<!-- 
-            <button type="button" class="btn btn-primary proximamente" data-bs-toggle="modal" data-bs-target="#">
-                More info
-            </button>
 
 
-            <div class="modal fade" id="{{product._id}}" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h3 class="modal-title fs-5" id="exampleModalLabel">{{product.product}}</h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+<!--<img src="http://localhost:3000/imagenes/{{ productSelected.imagen }}" class="img-thumbnail"
+                                alt="imagen de una {{ productSelected.product }}" />
+                            </li>-->

@@ -45,7 +45,7 @@ export class ResComponent {
           password,
           cPassword,
         };
-        this.resservice.res(Ifsr).subscribe((response:any)=>{console.log(response)})
+        this.resservice.res(Ifsr).subscribe((response:any)=>{console.log()})
         this.toastrService.success("Register Success!")
         setTimeout(() => {
           const redirectUrl = this.logService.redirectUrl ? this.logService.redirectUrl: "/login"

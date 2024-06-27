@@ -232,6 +232,8 @@ form .login-button{
         background-position:top;
         width: 93%;
         height: auto;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 150px;
         padding:3em;
         border-radius: 0;

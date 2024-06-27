@@ -25,7 +25,8 @@ h2{
 
 @media screen and (max-width:785px){
     .p-1{
-        background-color: none!important;
+        background-color:#fa4b9a00!important;
         box-shadow: none!important;
+        color:#ff91c2!important;
     }
 }
