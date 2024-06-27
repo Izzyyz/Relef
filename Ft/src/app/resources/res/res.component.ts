@@ -45,15 +45,22 @@ export class ResComponent {
           password,
           cPassword,
         };
-        this.resservice.res(Ifsr).subscribe((response:any)=>{console.log()})
-        this.toastrService.success("Register Success!")
-        setTimeout(() => {
-          const redirectUrl = this.logService.redirectUrl ? this.logService.redirectUrl: "/login"
-        this.logService.redirectUrl = null;
-        this.router.navigateByUrl(redirectUrl)
-        }, 2000);
+        this.resservice.res(Ifsr).subscribe((respuesta:any)=>{
+          if(respuesta.resultado === "bien"){
+            this.toastrService.success("Register Success!, Sign In")
+            setTimeout(() => {
+              const redirectUrl = this.logService.redirectUrl ? this.logService.redirectUrl: "/login"
+            this.logService.redirectUrl = null;
+            this.router.navigateByUrl(redirectUrl)
+            }, 2000);
+          } else {
+            this.toastrService.warning("There's already an account with this email")
+          }
+        })
+        
+        
     } else {
-      console.log("L");
+      this.toastrService.warning("You must complete all the fields")
     }
       }
     }

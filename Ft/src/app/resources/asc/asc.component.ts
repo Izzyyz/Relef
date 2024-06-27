@@ -13,5 +13,6 @@ import { FooterComponent } from "../footer/footer.component";
   styleUrl: './asc.component.css'
 })
 export class AscComponent {
-
+  api = "http://localhost:4200/routines"
+    
 }

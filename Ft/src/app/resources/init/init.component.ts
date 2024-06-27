@@ -13,5 +13,5 @@ import { FooterComponent } from "../footer/footer.component";
   styleUrl: './init.component.css'
 })
 export class InitComponent {
-
+  apiS = "http://localhost:4200/store"
 }

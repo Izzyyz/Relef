@@ -82,6 +82,11 @@
     width: 60px;
 }
 
+.btn:hover{
+    background-color: #fa4b9a;
+    transition: 0.3;
+}
+
 .card-img-top{
     max-height: 60%;
 }
@@ -191,4 +196,8 @@ h3{
 
 @media screen and (max-width:1350px){
 
+}
+
+.card-footer{
+    border: 0px;
 }
