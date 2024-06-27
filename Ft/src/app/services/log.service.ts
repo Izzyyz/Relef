@@ -26,18 +26,29 @@ return this.httpClient.get(`${this.API_URL}/${token}`);
   isLog() {
   const token = localStorage.getItem("token");
   if (token) {
-    return true;
+    
+      return true;
+    
+    
   } else {
-    return false;
+   
+      return false;
+  
   }
 }
   logout() {
     this.toastrService.info("Thank you for using our services, see you later.!");
-  localStorage.removeItem("token");
-  this.router.navigate(["/"]);
+    setTimeout(() => {
+      localStorage.removeItem("token");
+      this.router.navigate(["/"]);
+    }, 2000);
 }
 logout2(){
-  localStorage.removeItem("token");
+  this.toastrService.info("Thank you for using our services, see you later.!");
+  setTimeout(() => {
+    localStorage.removeItem("token");
   this.router.navigate(["/login"]);
+  }, 2000);
+ 
 }
 }

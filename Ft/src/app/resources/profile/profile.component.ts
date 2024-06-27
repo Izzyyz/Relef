@@ -131,7 +131,7 @@ ngOnInit(): void {
           this.ciudad = respuesta.datos.city;
           this.phone = respuesta.datos.phone;
           this.id = respuesta.datos.id
-					this.toastService.success(`Hi, ${this.fName} ${this.lName} enjoy our skin care store `);
+					this.toastService.success(`Hi, ${this.fName} ${this.lName}`);
 				} else {
 					this.logService.logout();
 				}

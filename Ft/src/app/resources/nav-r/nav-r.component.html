@@ -26,7 +26,12 @@
             </li>
             @if(logService.isLog()) {<li class="nav-item">
               <a class="nav-link mx-lg-2" routerLink="/profile"> Profile</a>
-            </li>}@else {
+            </li>
+
+            <a class="login-button end" routerLink="/home" style="display: flex; margin-left: auto;"
+              (click)="logService.logout()"> Log Out</a>
+
+            }@else {
             <li class="nav-item">
               <a class="nav-link mx-lg-2" routerLink="/login"> Sign In</a>
             </li>

@@ -40,11 +40,13 @@ export class LogComponent {
         };
         this.loginService.log(Ifc).subscribe((respuesta:any)=>{
           if (respuesta.resultado === "bien"){
-            this.toastrService.success("Welcome")
+            this.toastrService.success("Welcome, loading Store")
             localStorage.setItem("token", respuesta.datos)
-            const redirectUrl = this.loginService.redirectUrl ? this.loginService.redirectUrl: "/store"
+            setTimeout(() => {
+              const redirectUrl = this.loginService.redirectUrl ? this.loginService.redirectUrl: "/store"
             this.loginService.redirectUrl = null;
             this.router.navigateByUrl(redirectUrl)
+            }, 2000);
           } else {
             this.toastrService.warning("Invalid token")
             console.log("invalid token");

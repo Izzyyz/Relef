@@ -5,6 +5,9 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators, } from '@angul
 import { ResService } from "../../services/res.service";
 import { NavRComponent } from "../nav-r/nav-r.component";
 import { NavComponent } from "../nav/nav.component";
+import { ToastrService } from "ngx-toastr";
+import { LogService } from "../../services/log.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-res',
@@ -14,6 +17,9 @@ import { NavComponent } from "../nav/nav.component";
   styleUrl: './res.component.css'
 })
 export class ResComponent {
+  router = inject(Router)
+  logService = inject(LogService)
+  toastrService = inject(ToastrService)
   resservice = inject(ResService)
   IfsrForm = new FormGroup({
     fName: new FormControl('', Validators.required),
@@ -40,11 +46,15 @@ export class ResComponent {
           cPassword,
         };
         this.resservice.res(Ifsr).subscribe((response:any)=>{console.log(response)})
-        //console.log("Info", Ifsr)
+        this.toastrService.success("Register Success!")
+        setTimeout(() => {
+          const redirectUrl = this.logService.redirectUrl ? this.logService.redirectUrl: "/login"
+        this.logService.redirectUrl = null;
+        this.router.navigateByUrl(redirectUrl)
+        }, 2000);
     } else {
       console.log("L");
     }
       }
     }
   }
-
