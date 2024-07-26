@@ -14,7 +14,7 @@ export class LogService {
   router = inject(Router);
 toastrService = inject(ToastrService);
   
-  API_URL = "http://localhost:2444/log-in";
+  API_URL = "3.140.246.165:3000/log-in";
 redirectUrl: string | null = null;
 
   log(Ifc:Ifc){

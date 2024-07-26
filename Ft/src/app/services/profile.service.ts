@@ -14,8 +14,8 @@ constructor(private httpClient: HttpClient) {}
 tokenR: any [] = [];
 id7: string = "";
 id: String = "";
-API_URL_Profile: string = "http://localhost:2444/users"
-API_URL_ID: string = "http://localhost:2444/log-in"
+API_URL_Profile: string = "3.140.246.165:3000/users"
+API_URL_ID: string = "3.140.246.165:3000/log-in"
 
 /* token = this.logService.validarToken().subscribe() */
 

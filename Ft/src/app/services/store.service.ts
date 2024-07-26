@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
 })
 export class StoreService {
     constructor() { }
-    API_URL: string = "http://localhost:2444/products"
+    API_URL: string = "3.140.246.165:3000"
 
     httpClient = inject(HttpClient)
 

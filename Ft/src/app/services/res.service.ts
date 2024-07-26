@@ -11,5 +11,5 @@ export class ResService {
   httpClient = inject(HttpClient);
 
   res(Ifsr:Ifsr){
-    return this.httpClient.post("http://localhost:2444/register", Ifsr)
+    return this.httpClient.post("3.140.246.165:3000/register", Ifsr)
 }}
