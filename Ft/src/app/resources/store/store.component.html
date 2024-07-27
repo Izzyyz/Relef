@@ -4,7 +4,7 @@
 <main class="container d-flex flex-wrap justify-content-center gap-5">
     @for ( product of allStore ; track product._id ) {
     <div class="card gap-0 row-gap-3 text-center column-gap-3 p-3 mb-5 yatusabe" style="width: 18rem; height: 35rem;">
-        <img src="3.140.246.165:3000/img/{{product.img}}" class="card-img-top yatusabe2"
+        <img src="http://3.140.246.165:3000/img/{{product.img}}" class="card-img-top yatusabe2"
             alt="foto de {{product.img}}" style="height: 20rem;">
         <div class="card-body">
             <h4 class="card-title">{{product.product}}</h4>
@@ -35,7 +35,7 @@
           <li class="propetiesl"><b class="propeties">Amount: </b>     {{productSelected.productAmount}}</li>
           <li class="propetiesl"><b class="propeties">Price: </b>      {{productSelected.price| currency}}</li>
           <li><img
-            src="3.140.246.165:3000/img/{{ productSelected.img }}"
+            src="http://3.140.246.165:3000/img/{{ productSelected.img }}"
             class="img-thumbnail"
             alt="Img of {{ productSelected.product }}"/></li>
         </ul>
